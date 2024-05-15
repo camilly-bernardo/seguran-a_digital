@@ -51,4 +51,18 @@ function geraSenha(){
         alfabeto = alfabeto + simbolos;
     }
         let senha = 
-        for (let i = 0; i < tamanhoSenha;i++) (
+        for (let i = 0; i < tamanhoSenha;1++) {}
+           let numeroAleatorio = Math. random () * alfabeto. length;
+           numeroAleatorio = Math. floor (numeroAleatorio);
+           senha = senha + alfabeto [numeroAleatorio];
+        }
+        campoSenha. value = senha;
+        classificaSenha(alfabeto.lenght)
+
+    }
+
+    function classificasenha (tamanhoAlfabeto){
+        let entropia =tamanhoSenha * Math. log2 (tamanhoAlfabeto);
+        console. log(entropia);
+        forcaSenha.classList.remove('fraca , media'
+
