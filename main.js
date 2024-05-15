@@ -7,7 +7,7 @@ const numeros = '01234567891';
 const simbolos = ' !@*?';
 const botoes = document.querySelectorAlI(*parametro-senha__botao');
 const campoSenha = document. querySelector ('#campo -senha');
-const checkbox = document . querySelectorALL('. checkbox’);
+const checkbox = document . querySelectorALL('. checkbox');
 const forcaSenha = document.querySelector ('.forca');
 
 botoes [0].onclick = diminuiTamanho;
@@ -64,5 +64,14 @@ function geraSenha(){
     function classificasenha (tamanhoAlfabeto){
         let entropia =tamanhoSenha * Math. log2 (tamanhoAlfabeto);
         console. log(entropia);
-        forcaSenha.classList.remove('fraca , media'
-
+        forcaSenha.classList.remove('fraca' , 'media' , 'forte');
+        if (entropia > 57){
+            forcaSenha.classList.add('forte');
+        } else if (entropia > 35 && entropia < 57 ) {
+            forcaSenha.classList.add('media');
+        } else if (entropia <=  35){
+            forcaSenha.classList.add('fraca');
+        }
+        const valorentropia = document.querySelector('.entropia');
+        valorentropia.textcontent = "um computador pode levar ate" + math.floor(2**entropia/(100e6*60*
+    }
